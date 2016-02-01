@@ -4,7 +4,7 @@ defmodule Rumbl.Mixfile do
   def project do
     [app: :rumbl,
      version: "0.0.1",
-     elixir: "~> 1.2.1",
+     elixir: "~> 1.2.2",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -36,7 +36,8 @@ defmodule Rumbl.Mixfile do
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:hound, "~> 0.8"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
