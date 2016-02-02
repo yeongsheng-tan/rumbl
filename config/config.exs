@@ -27,3 +27,6 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+# Configure hound to use phantomjs
+config :hound, driver: "phantomjs"
